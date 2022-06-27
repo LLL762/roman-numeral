@@ -29,17 +29,15 @@ public final class RomanConverter {
 			if (value < topValue) {
 
 				output -= value;
+				continue;
 
-			} else {
+			}
 
-				output += value;
+			output += value;
 
-				if (value > topValue) {
+			if (value > topValue) {
 
-					topValue = value;
-
-				}
-
+				topValue = value;
 			}
 
 		}
